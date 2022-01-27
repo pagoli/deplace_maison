@@ -1,7 +1,13 @@
 *, *::before, *::after {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 :root {
@@ -9,6 +15,104 @@
     --clr-img: #e7d6c4;
     --clr-one: #ddc92a;
     --clr-txt: #141414;
+
+}
+
+body {
+    width: 100;
+    font-family: Helvetica, sans-serif;
+    background-color: var(--clr-bg);
+}
+
+/* SECTION REVIEW */
+
+.review_container {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 3rem 0;
+}
+
+.review_container div {
+    width: 30%;
+}
+
+.review_container div:first-of-type {
+    background: url(https://global-uploads.webflow.com/5c9c9c646cf0969b319f264f/5d0b92e20369a4438cd54272_virgolette.svg) no-repeat;
+    background-size: 60px;
+}
+
+.reviewer {
+    position: relative;
+}
+
+.review_container img {
+    width: 30%;
+}
+
+.review_container h3 {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+}
+
+.review_container h3 {
+    font-size: 1.5rem;
+    font-family: Cyberthrone, sans-serif;
+    /* font-family: 'Tt trailers',sans-serif; */
+    font-weight: bold;
+}
+
+.review h4 {
+    font-size: .8rem;
+}
+
+#footer {
+    position: relative;
+    top: auto;
+    left: 0;
+
+    width: 100%;
+
+    padding-top: 300px;
+
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    grid-template-rows: 200px;
+    grid-template-areas: "c1 c2 c3 c4";
+}
+
+#footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.fcol-1 {
+    grid-template-areas: c1;
+}
+
+.fcol-1 i {
+    font-size: 3rem;
+}
+
+/* Subscribe FORM */
+
+.fcol-1 .subscribe {
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+}
+
+.subscribe label {
+    font-size: .8rem;
+    font-weight: bold;
+
     font-family: 'Roboto', sans-serif;
 }
 
@@ -155,9 +259,29 @@ h1 {
 .container-exp i {
     font-size: 4vw;
     padding-left: 2vw;
+
 }
 
 
+
+
+.fcol-4 .arrow_up {
+    position: relative;
+}
+
+.fcol-4 img {
+    width: 50px;
+    height: 50px;
+}
+
+.fcol-4 .fa-arrow-up {
+    font-size: 2rem;
+    color: black;
+
+    position: absolute;
+    top: 10.5%;
+    left: 7.5%
+}
 
 
 
@@ -253,3 +377,4 @@ h1 {
     margin-left: 0.6rem;
     margin-bottom: 3rem;
 }
+
