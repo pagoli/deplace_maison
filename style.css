@@ -4,3 +4,55 @@
     --clr-one: #ddc92a;
     --clr-txt: #141414;
 }
+
+body {
+    width: 100;
+    
+    background-color: var(--clr-bg);
+}
+
+/* SECTION REVIEW */
+
+.review_container {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.review_container div {
+    width: 30%;
+    height: 150px;
+}
+
+.review_container div:first-of-type {
+    background: url(https://global-uploads.webflow.com/5c9c9c646cf0969b319f264f/5d0b92e20369a4438cd54272_virgolette.svg) no-repeat 0 0 / contain;
+}
+
+.review_container img {
+    width: 30%;
+}
+
+.review_container h3 {
+    font-size: 1.5rem;
+    font-family: Cyberthrone, sans-serif;
+    /* font-family: 'Tt trailers',sans-serif; */
+    font-weight: bold;
+}
+
+.review_container h4 {
+    font-size: 1rem;
+}
+
+#footer {
+    position: relative;
+    top: auto;
+    left: 0;
+
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    grid-template-rows: auto ;
+
+}
