@@ -34,6 +34,8 @@ nav .cart {
     margin-left: 20px;
 }
 
+
+
 /* HEADER */
 
 
@@ -41,16 +43,14 @@ nav .cart {
 header {
     width: 77%;
     margin: 20px auto;
-    padding: 25px 0;
+    padding: 65px 0 25px 0;
     position: relative;
-    border: 1px solid;
     font-size: .85vw;
 }
 
 .container-header-title {
     width: 100%;
     display: grid;
-
 }
 
 
@@ -73,6 +73,7 @@ h1 {
 .wrapping-text {
     display: flex;
     justify-content: flex-end;
+    padding-top: 1vw;
 }
 
 .summer {
@@ -88,6 +89,7 @@ h1 {
 .little {
     font-size: 4vw;
     font-weight: 400;
+    line-height: 3.5vw;
 }
 
 .twenty {
@@ -95,12 +97,29 @@ h1 {
 }
 
 
- img {
-     height: 300px;
- 
+
+
+/* IMAGE CONTAINER*/
+
+.container-header-img {
+    display :flex;
+    padding-top: 3.5vw;
+    justify-content: flex-end;
+}
+
+ .header-img img{
+     height: 45vw;
+     border: 3px solid;
  }
 
+ .header-img:first-child {
+     padding-right: 15px;
+ }
+
+ .header-img:last-child {
+    padding-left: 15px;
+}
 
 
 
- 
+
