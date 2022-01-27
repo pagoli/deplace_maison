@@ -1,8 +1,130 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --clr-bg: #fcf9ee;
     --clr-img: #e7d6c4;
     --clr-one: #ddc92a;
     --clr-txt: #141414;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--clr-bg);
+    width: 100vw;
+}
+
+nav {
+    width: 100%;
+    height: 20px;
+    padding: 40px 55px 30px 55px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+nav .ink {
+    background-color: var(--clr-img);
+    height: 20px;
+}
+
+nav .cart {
+    margin-left: 20px;
+}
+
+
+
+/* HEADER */
+
+
+/* MAIN CONTAINER */
+
+header {
+    width: 78%;
+    margin: 20px auto;
+    padding: 65px 0 25px 0;
+    position: relative;
+    font-size: .85vw;
+}
+
+.container-header-title {
+    width: 100%;
+    display: grid;
+}
+
+
+/* BIG LETTERS */
+h1 {
+    text-transform: uppercase;
+}
+
+.huge {
+    font-size: 14.5vw;
+    font-weight: 400;
+    letter-spacing: -1.5vw;
+    line-height: 11vw;
+}
+
+.spring {
+    justify-self: flex-end;
+}
+
+.wrapping-text {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1vw;
+}
+
+.summer {
+    padding-right: 1vw;
+}
+
+/* SMALL LETTERS */
+
+.wrapping-mini {
+    padding-top: 1.2vw;
+}
+
+.little {
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 3.5vw;
+}
+
+.twenty {
+    padding-left: 2vw;
+}
+
+
+
+
+/* IMAGE CONTAINER*/
+
+.container-header-img {
+    display :flex;
+    padding-top: 3.5vw;
+    justify-content: flex-end;
+}
+
+ .header-img img{
+     height: 45vw;
+     border: 3px solid;
+ }
+
+ .header-img:first-child {
+     padding-right: 25px;
+ }
+
+ .header-img:last-child {
+    padding-left: 25px;
+}
+
+
+
+
 }
 
 .side-text {
