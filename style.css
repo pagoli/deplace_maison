@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 *, *::before, *::after {
 
     box-sizing: border-box;
@@ -19,106 +21,9 @@
 }
 
 body {
-    width: 100;
+    width: 100vw;
     font-family: Helvetica, sans-serif;
     background-color: var(--clr-bg);
-}
-
-/* SECTION REVIEW */
-
-.review_container {
-    width: 100%;
-
-    display: flex;
-    justify-content: flex-end;
-
-    padding: 3rem 0;
-}
-
-.review_container div {
-    width: 30%;
-}
-
-.review_container div:first-of-type {
-    background: url(https://global-uploads.webflow.com/5c9c9c646cf0969b319f264f/5d0b92e20369a4438cd54272_virgolette.svg) no-repeat;
-    background-size: 60px;
-}
-
-.reviewer {
-    position: relative;
-}
-
-.review_container img {
-    width: 30%;
-}
-
-.review_container h3 {
-    position: absolute;
-    top: 10%;
-    right: 20%;
-}
-
-.review_container h3 {
-    font-size: 1.5rem;
-    font-family: Cyberthrone, sans-serif;
-    /* font-family: 'Tt trailers',sans-serif; */
-    font-weight: bold;
-}
-
-.review h4 {
-    font-size: .8rem;
-}
-
-#footer {
-    position: relative;
-    top: auto;
-    left: 0;
-
-    width: 100%;
-
-    padding-top: 300px;
-
-    display: grid;
-    grid-template-columns: 3fr repeat(3, 1fr);
-    grid-template-rows: 200px;
-    grid-template-areas: "c1 c2 c3 c4";
-}
-
-#footer div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-
-.fcol-1 {
-    grid-template-areas: c1;
-}
-
-.fcol-1 i {
-    font-size: 3rem;
-}
-
-/* Subscribe FORM */
-
-.fcol-1 .subscribe {
-    display: flex;
-    flex-direction: column;
-
-    width: 70%;
-}
-
-.subscribe label {
-    font-size: .8rem;
-    font-weight: bold;
-
-    font-family: 'Roboto', sans-serif;
-}
-
-body {
-    background-color: var(--clr-bg);
-    width: 100vw;
 }
 
 
@@ -265,23 +170,6 @@ h1 {
 
 
 
-.fcol-4 .arrow_up {
-    position: relative;
-}
-
-.fcol-4 img {
-    width: 50px;
-    height: 50px;
-}
-
-.fcol-4 .fa-arrow-up {
-    font-size: 2rem;
-    color: black;
-
-    position: absolute;
-    top: 10.5%;
-    left: 7.5%
-}
 
 
 
@@ -378,3 +266,144 @@ h1 {
     margin-bottom: 3rem;
 }
 
+/* SECTION REVIEW */
+
+.review_container {
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 9rem 0;
+}
+
+.review_container div {
+    width: 33%;
+    height: 100px;
+}
+
+.review_container div:first-of-type {
+    background: url(https://global-uploads.webflow.com/5c9c9c646cf0969b319f264f/5d0b92e20369a4438cd54272_virgolette.svg) no-repeat;
+    background-size: 25%;
+    background-position: 20%;
+}
+
+.reviewer {
+    position: relative;
+}
+
+.review_container img {
+    width: 30%;
+}
+
+.review_container h3 {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+
+    font-size: 1.8rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.review h4 {
+    height: 100%;
+
+    font-size: .9rem;
+    font-weight: 400;
+    display: grid;
+    place-items: center;
+
+    padding: 1rem;
+}
+
+/* FOOTER */
+
+#footer {
+    position: relative;
+    top: auto;
+    left: 0;
+
+    width: 100%;
+
+    padding: 6rem 0 1rem 3rem;
+
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    grid-template-rows: 200px;
+    grid-template-areas: "c1 c2 c3 c4";
+}
+
+#footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+:is(#footer) :is(.f-up) :is(h5, h3) {
+    padding-bottom: .3rem;
+}
+
+#footer h5 {
+    font-weight: 100;
+    font-size: .8rem;
+    padding-bottom: .5rem
+}
+
+/* NEWSLETTER */
+.fcol-1 {
+    grid-template-areas: c1;
+}
+
+.fcol-1 i {
+    font-size: 3rem;
+}
+
+/* Subscribe FORM */
+
+form.subscribe {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subscribe label {
+    width: 100%;
+    font-size: .8rem;
+    font-weight: bold;
+    padding-bottom: .3rem;
+}
+
+#newsletter {
+    width: 70%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+}
+
+.submit_button{
+    padding: .5rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+/* UP ARROW */
+
+.fcol-4 .arrow_up {
+    position: relative;
+}
+
+.fcol-4 img {
+    width: 50px;
+    height: 50px;
+}
+
+.fcol-4 .fa-arrow-up {
+    font-size: 2rem;
+    color: black;
+
+    position: absolute;
+    top: 11%;
+    left: 6%
+}
