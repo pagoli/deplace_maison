@@ -20,7 +20,7 @@ body {
   width: 100vw;
   font-family: Helvetica, sans-serif;
   background-color: var(--clr-bg);
-
+}
 @font-face {
     font-family: 'Trailers';
     src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-ExtraLight.woff') format('woff');
@@ -77,7 +77,9 @@ body {
     font-style: normal;
 }
 
-*, *::before, *::after {
+*, 
+
+*::before, *::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -580,10 +582,6 @@ form.subscribe {
   .hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before, .hvr-underline-from-right:active:before {
     left: 0;
   } */
-
-    top: 11%;
-    left: 6%
-}
 
 /* CURSOR STYLE */
 
