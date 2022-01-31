@@ -420,6 +420,23 @@ h1 {
   justify-content: space-between;
 }
 
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(-1);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-shrink:hover,
+.hvr-shrink:focus,
+.hvr-shrink:active {
+    transform: scale(0.9);
+}
+
 :is(#footer) :is(.f-up) :is(h5, h3) {
   padding-bottom: 0.3rem;
 }
