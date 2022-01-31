@@ -1,5 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+@font-face {
+    font-family: 'Trailers';
+    src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trailers';
+    src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trailers';
+    src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trailers';
+    src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trailers';
+    src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trailers';
+    src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trailers';
+    src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Trailers';
+    src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
@@ -73,6 +129,7 @@ header {
 /* BIG LETTERS */
 h1 {
     text-transform: uppercase;
+    /* font-family: "Trailers"; */
 }
 
 .huge {
@@ -80,6 +137,7 @@ h1 {
     font-weight: 400;
     letter-spacing: -1.5vw;
     line-height: 11vw;
+    font-family: "Trailers", sans-serif;
 }
 
 .spring {
