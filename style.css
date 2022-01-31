@@ -130,7 +130,6 @@ header {
 /* BIG LETTERS */
 h1 {
     text-transform: uppercase;
-    /* font-family: "Trailers"; */
 }
 
 .huge {
@@ -138,7 +137,6 @@ h1 {
     font-weight: 400;
     letter-spacing: -1.5vw;
     line-height: 11vw;
-    font-family: "Trailers", sans-serif;
 }
 
 .spring {
