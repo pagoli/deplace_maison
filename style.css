@@ -1,16 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 @font-face {
-    font-family: 'Trailers';
-    src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Trailers';
-    src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-Light.woff') format('woff');
-    font-weight: 300;
+    font-family: 'Cyber';
+    src: url('./Font/Cyberthrone.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -39,20 +32,6 @@
     font-family: 'Trailers';
     src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-Bold.woff') format('woff');
     font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Trailers';
-    src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Trailers';
-    src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-Black.woff') format('woff');
-    font-weight: 900;
     font-style: normal;
 }
 
@@ -95,6 +74,8 @@ nav .ink {
     background-color: var(--clr-img);
     height: 20px;
     position: relative;
+    font-family: "Cyber";
+    font-size: 1.2vw;
 }
 
 /* CART IS FIXED */
@@ -129,7 +110,6 @@ header {
 /* BIG LETTERS */
 h1 {
     text-transform: uppercase;
-    /* font-family: "Trailers"; */
 }
 
 .huge {
@@ -137,7 +117,7 @@ h1 {
     font-weight: 400;
     letter-spacing: -1.5vw;
     line-height: 11vw;
-    font-family: "Trailers", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .spring {
@@ -237,7 +217,7 @@ h1 {
 /* Top alert banner */
 .alert-container {
     margin: 0;
-    padding: 0.5vw 0;
+    padding-top: 0.3vw;
     width: 100%;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -246,22 +226,8 @@ h1 {
     align-items: center;
 }
 
-.c-marquee-text {
-    display: flex;
-    align-items: center;
-}
-
-.c-marquee-content {
-    display: flex;
-    align-items: center;
-}
-
-.c-marquee-heading {
-    display: flex;
-    align-items: center;
-    font-size: 2vw;
-    text-transform: uppercase;
-    font-weight: 400;
+.alert-container p {
+    font-size: 2.5vw;
 }
 
 /* text section */
@@ -351,14 +317,15 @@ h1 {
 }
 
 .review_container div {
-    width: 33%;
-    height: 100px;
+    width: 30%;
+    height: 120px;
 }
 
 .review_container div:first-of-type {
     background: url(https://global-uploads.webflow.com/5c9c9c646cf0969b319f264f/5d0b92e20369a4438cd54272_virgolette.svg) no-repeat;
-    background-size: 25%;
-    background-position: 20%;
+    background-size: 7.5vw;
+    background-position: 11.2vw;
+    background-position-y: -0.4vw;
 }
 
 .reviewer {
@@ -371,11 +338,12 @@ h1 {
 
 .review_container h3 {
     position: absolute;
-    top: 30%;
-    left: 25%;
+    top: 2vw;
+    left: 15vw;
 
-    font-size: 1.8rem;
-    font-family: 'Permanent Marker', cursive;
+    font-size: 3.9vw;
+    font-family: 'Cyber';
+    font-weight: 300;
 }
 
 .review h4 {
