@@ -1,26 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-:root {
-  --clr-bg: #fcf9ee;
-  --clr-img: #e7d6c4;
-  --clr-one: #ddc92a;
-  --clr-txt: #141414;
-}
-
-body {
-  width: 100vw;
-  font-family: Helvetica, sans-serif;
-  background-color: var(--clr-bg);
-}
 @font-face {
     font-family: 'Trailers';
     src: url('./Font/TextFonts.net_tt-trailers-font-family/TTTrailers-ExtraLight.woff') format('woff');
@@ -98,7 +77,6 @@ body {
     font-family: Helvetica, sans-serif;
     background-color: var(--clr-bg);
     overflow-x: hidden;
-
 }
 
 a {
