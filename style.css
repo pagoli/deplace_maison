@@ -67,13 +67,14 @@
     --clr-img: #e7d6c4;
     --clr-one: #ddc92a;
     --clr-txt: #141414;
-
+    --cursor-size: 28px;
 }
 
 body {
     width: 100vw;
     font-family: Helvetica, sans-serif;
     background-color: var(--clr-bg);
+    overflow-x: hidden;
 }
 
 
@@ -460,3 +461,29 @@ form.subscribe {
     top: 11%;
     left: 6%
 }
+
+/* CURSOR STYLE */
+
+#cursor {
+    position: fixed;
+    top: calc(var(--cursor-size) * -0.5);
+    left:  calc(var(--cursor-size) * -0.5);
+    pointer-events: none;
+    mix-blend-mode: difference;  
+    filter: url(#goo);
+}
+
+  .cursor-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--cursor-size);
+    height: var(--cursor-size);
+    border-radius: var(--cursor-size);
+    background: var(--clr-bg);
+    transform-origin: center center;
+} 
+
+.goo {
+    display: none;
+  }
